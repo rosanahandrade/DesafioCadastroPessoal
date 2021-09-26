@@ -3,8 +3,8 @@
 function enviar(){
     var nome = document.getElementById("nome").value;
     var sobrenome = document.getElementById("sobrenome").value;
+    var cpf = document.getElementById("cpf").value;
     var celular = document.getElementById("cel").value;
-    var fixo = document.getElementById("tel").value;
     var rua = document.getElementById("rua").value;
     var num = document.getElementById("num").value;
 
@@ -18,15 +18,17 @@ function enviar(){
         return false;  
     }
 
+    if (cpf == ""){
+        alert("Campo CPF obrigatório");  
+        return false;  
+    }
+
     if (celular == ""){
         alert ("Campo CELULAR obrigatório");
         return false;
     }
 
-    if (fixo == ""){
-        alert ("Campo TEL FIXO obrigatório");
-        return false;
-    }
+
 
     if (rua == ""){
         alert ("Campo RUA obrigatório");
