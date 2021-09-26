@@ -45,3 +45,105 @@ function enviar(){
 
   
 }
+
+
+
+function mascara_cpf(){
+  
+
+    let cpf = document.getElementById("cpf");
+
+    if (cpf.value.length == 3 || cpf.value.length == 7){
+
+        cpf.value += "."
+
+    } else if (cpf.value.length == 11) {
+
+        cpf.value += "-"
+
+
+    }
+
+}
+
+function mascara_rg(){
+  
+
+    let rg = document.getElementById("rg");
+
+    if (rg.value.length == 2 || rg.value.length == 6 ){
+
+        rg.value += "."
+
+    } else if (rg.value.length == 10) {
+
+        rg.value += "-"
+
+
+    }
+
+}
+
+
+function mascara_tel(){
+
+    let telefone = document.getElementById("tel");
+
+    
+
+    if (telefone.value.length == 1 ){
+
+        telefone.value = "(" + telefone.value;
+
+    } if (telefone.value.length == 3 ){
+
+        telefone.value += ")"
+    } else if (telefone.value.length == 8) {
+
+        telefone.value += "-"
+
+    }
+
+
+
+}
+
+function mascara_cel(){
+
+
+    let celular = document.getElementById("cel");
+
+    
+
+    if (celular.value.length == "1"){
+
+        celular.value = "(" + celular.value;
+
+    } if (celular.value.length == "3"){
+
+        celular.value += ")"
+    } else if (celular.value.length == 9) {
+
+        celular.value += "-"
+
+    }
+
+
+
+}
+
+
+function mascara_cep(){
+
+    let cep = document.getElementById("cep");
+
+    if ( cep.value.length == 5 ){
+
+       cep.value += "-"
+
+
+
+    }
+
+
+}
